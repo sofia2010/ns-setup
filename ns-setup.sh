@@ -30,7 +30,7 @@ echo
 secret=$(cat /proc/sys/kernel/random/uuid)
 echo "NS_SECRET=$secret" >> .env
 
-curl https://raw.githubusercontent.com/justmara/ns-setup/jino/docker-compose.yml --output docker-compose.yml
+curl https://raw.githubusercontent.com/sofia2010/ns-setup/jino/docker-compose.yml --output docker-compose.yml
 
 sudo docker compose up -d
 
